@@ -5,73 +5,19 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .parent {
-            position: relative;
-            background-color: brown;
-            padding: 30px;
-            height: 200vh;
-        }
-        .child {
-            position: sticky;
-            top: 0;
-            padding: 10px;
-            text-align: center;
-        }
-        .one {
-            background-color: cadetblue;
-        }
-        .two {
-            background-color: aqua;
-        }
-        .tree {
-            background-color: #F7654A;
-        }
-
-       a[href*=op] {background-color: #fff;}
+        div::first-letter {color: red; font-style: italic;}
+        p:focus {background-color: yellowgreen;}
+        input:disabled+span {text-decoration: line-through;}
+        input:enabled+span {border: 1px solid yellowgreen;}
 
     </style>
 </head>
 <body>
 <div class="parent">PARENT <br>
-    <a href="xxxOPA">Dimon you a the best devepoler</a><br>
-    <a href="xx">Dimon you a the best devepoler</a>
-    <div class="void">
-        <div class="child one">ONE</div>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li class="testO test2">Lorem ipsum dolor.</li>
-                <li class="test2">Lorem ipsum.</li>
-                <li class="testO">Lorem ipsum.</li>
-            </ul>
-        <button onclick="alert('1234124124')" >click</button>
-    </div>
-
-    <div class="vo">
-        <div class="child two">TWO</div>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-            </ul>
-    </div>
-    <div class="void">
-        <div class="child tree">TREE</div>
-            <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-                <li>Lorem ipsum.</li>
-            </ul>
-    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae at quisquam unde et illum est sunt animi quod illo? Veniam?</p>
+    <p class="new">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, minus necessitatibus.</p>
+    <input type="checkbox" disabled="true"><span>Lorem, ipsum dolor.</span>
+    <input type="checkbox"enabled><span>Lorem, ipsum dolor.</span>
 </div>
-
 </body>
 </html>
