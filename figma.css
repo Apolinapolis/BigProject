@@ -663,6 +663,9 @@ text-align: center;
 color:var(--accent-color);
 }
 
+#lastImg{margin-bottom: 15px;}
+#last{margin-bottom: 19px;}
+
 @media screen and (max-width: 1280px) {
   .contacts__grid {
     grid-template-columns: repeat(2 , 1fr);
@@ -683,3 +686,20 @@ color:var(--accent-color);
     border-style: ridge;
   }
 }
+
+.footer {
+  padding: 29px 0 30px;
+  background: var(--dark-color);
+  height: 82px;
+}
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-p {
+font-family: "Open Sans", sans-serif;
+font-weight: 400;
+font-size: 16px;
+color: #fff;
+}
+
