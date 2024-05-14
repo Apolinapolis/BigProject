@@ -6,30 +6,44 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>   -->
     <link rel="stylesheet" href="./figma.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train_Figma</title>
 </head>
 
 <body>
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+    <li><a href="#!"><i class="material-icons">fingerprint</i>Войти</a></li>
+    <li><a href="#!"><i class="material-icons">brightness_4</i>Ночной режим</a></li>
+    <li><a href="#!"><i class="material-icons">phone_iphone</i>Контакты</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть меню</a></li>
+  </ul>
+  <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+  
     <header class="header">
         <div class="container">
             <div class="header__title">
                 <img src="./figmaImg/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a data-target="slide-out" class="burger sidenav-trigger">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
             <h1 class="h1">Реализуем крупнейшие проекты в России</h1>
             <h4 class="h4">Стадионы, газопроводы, мосты, дамбы</h4>
         </div>
     </header>
+
     <section class="about">
         <div class="info">
             <div class="container">
@@ -81,10 +95,10 @@
                     <p class="text-p project-p">Мы сделали самую красивую арену в Европе. Это открытие стало для нас
                         прорывной точкой для разивтия на следующие десятилетия. Мы очень рады данному еву.</p>
                 </div>
-
             </div>
         </div>
     </section>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -101,6 +115,7 @@
             </div>
         </div>
     </section>
+
     <section class="services">
         <div class="container">
             <h2 class="text-h2 section__h2">Чем мы занимаемся?</h2>
@@ -132,6 +147,7 @@
             </div>
         </div>
     </section>
+
     <section class="portfolio">
         <div class="portfolio__grid">
             <div class="portfolio__grid-item">
@@ -160,6 +176,7 @@
             </div>
         </div>
     </section>
+
     <section class="question">
         <div class="container">
             <h2 class="text-h2 section__h2">Ответы на вопросы</h2>
@@ -199,6 +216,7 @@
             </div>
         </div>
     </section>
+
     <section class="partners">
         <div class="container">
             <h2 class="text-h2 partners__h2">Наши партнеры</h2>
@@ -221,6 +239,7 @@
             </div>
         </div>
     </section>
+
     <section class="review">
         <div class="container">
             <h2 class="text-2 reviews__h2">Отзывы о работе с нами</h2>
@@ -255,6 +274,7 @@
             </div>
         </div>
     </section>
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -271,6 +291,7 @@
             </div>
         </div>
     </section>
+
     <section class="contacts">
         <div class="container">
             <h2 class="text-h2 contacts-h2">Контакты</h2>
@@ -309,6 +330,7 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
             <div class="footer__flex">
@@ -317,6 +339,8 @@
             </div>
         </div>
     </footer>
-</body>
 
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 </html>
