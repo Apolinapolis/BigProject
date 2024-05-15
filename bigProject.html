@@ -3,32 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <!-- <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>   -->
-    <link rel="stylesheet" href="./figma.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Oswald:wght@200..700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./styles.css">
     <title>Train_Figma</title>
 </head>
 
 <body>
-
-  <ul id="slide-out" class="sidenav">
-    <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
-    <li><a href="#!"><i class="material-icons">fingerprint</i>Войти</a></li>
-    <li><a href="#!"><i class="material-icons">brightness_4</i>Ночной режим</a></li>
-    <li><a href="#!"><i class="material-icons">phone_iphone</i>Контакты</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть меню</a></li>
-  </ul>
-  <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
-
-  
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">fingerprint</i>Войти</a></li>
+        <li><a href="#!"><i class="material-icons">brightness_4</i>Ночной режим</a></li>
+        <li><a href="#!"><i class="material-icons">phone_iphone</i>Контакты</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i>Закрыть меню</a></li>
+    </ul>
     <header class="header">
         <div class="container">
             <div class="header__title">
@@ -99,6 +93,17 @@
         </div>
     </section>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div style="text-align: center;" class="modal-content">
+            <h4>Далеко-далеко за словесными горами в стране.</h4>
+            <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Переписали власти,
+                по всей выйти предупредила живет о жаренные решила, она дал речью рыбного деревни. Все рекламных от всех
+                сбить он, власти не над обеспечивает последний.</p>
+        </div>
+    </div>
+
+
     <section class="request">
         <div class="container">
             <div class="request__flex">
@@ -107,10 +112,10 @@
                     <h5 class="request-h5">РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</h5>
                 </div>
                 <div class="request-right">
-                    <button class="request-btn">
+                    <a class="request-btn modal-trigger" href="#modal1">
                         <img class="request-img" alt="xxx" src="./figmaImg/btn-logo.svg">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -151,28 +156,28 @@
     <section class="portfolio">
         <div class="portfolio__grid">
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="./figmaImg/portfolio.png" alt="ops!">
+                <img class="portfolio__img materialboxed" src="./figmaImg/portfolio.png" alt="ops!">
             </div>
         </div>
     </section>
@@ -247,29 +252,35 @@
                 <div class="review__grid-item">
                     <div class="review__card">
                         <div class="review__quotes">“</div>
-                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
+                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                            время
                             некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
                     </div>
-                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>                 
+                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>
                 </div>
                 <div class="review__grid-item">
                     <div class="review__card">
                         <div class="review__quotes">“</div>
-                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
+                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                            время
                             некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
                     </div>
-                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>                 
+                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>
                 </div>
                 <div class="review__grid-item">
                     <div class="review__card">
                         <div class="review__quotes">“</div>
-                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
-                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время
+                        <p class="text-p-reviews">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне.
+                            Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то
+                            время
                             некий безымянный печатник создал большую коллекцию размеров и форм шрифтов.</p>
                     </div>
-                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>                 
+                    <h4 class="text-h4">Иванов Иван,<span class="review-text-accent"> ООО “Газпром-Арена”</span></h4>
                 </div>
             </div>
         </div>
@@ -283,10 +294,10 @@
                     <h5 class="request-h5">ОСТАВЬТЕ ЗАЯВКУ И МЫ СВЯЖЕМСЯ С ВАМИ!</h5>
                 </div>
                 <div class="request-right">
-                    <button class="request-btn">
+                    <a class="request-btn modal-trigger" href="#modal1">
                         <img class="request-img" alt="xxx" src="./figmaImg/btn-logo.svg">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -340,7 +351,7 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
